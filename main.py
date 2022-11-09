@@ -43,63 +43,34 @@ def menu():
     elif choice == "3":
         print(Fore.RED + "Bye !")
         exit()
-    elif choice == "1":
-        print(Fore.GREEN + "Select your difficulty")
-        print(Fore.GREEN + """
-        [1] Easy (10 characters)
-        [2] Hard (20 characters)
-        """)
-        choice = input(Fore.BLUE + "Your choice : ")
-        if choice == "1":
-            os.system("cls || clear")
-            name = input(Fore.GREEN + "Enter your name : ")
-            note = 0
+    if choice == "1":
+        os.system("cls || clear")
+        name = input(Fore.GREEN + "Enter your name : ")
+        note = 0
+        for i in range(40):
             os.system("cls || clear")
             print(banner)
-            print(Fore.GREEN + f"Hello {name} welcome to Ascii to Hex")
-            print(Fore.BLUE + f"Your note is {note}")
-            ascii = ''.join(random.choice('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ') for i in range(10))
-            print(Fore.GREEN + f"Convert this in hex : {ascii}")
-            hex = input(Fore.GREEN + "Enter your answer : ")
-            if hex == binascii.hexlify(ascii.encode()).decode():
-                print(Fore.GREEN + "Good job")
-                note += 0.5
+            print(Fore.GREEN + f"Name : {name} | Note : {note}")
+            print(Fore.BLUE + "Convert the following text to hex")
+            word = ""
+            for i in range(10):
+                word += random.choice("abcdefghijklmnopqrstuvwxyz0123456789")
+            print(Fore.RED + word)
+            print(Fore.GREEN + "Your answer : ", end="")
+            answer = input()
+            if answer == binascii.hexlify(word.encode()).decode():
+                note += 20
             else:
-                print(Fore.RED + "Wrong")
                 note -= 1
-            if note == 40:
-                print(Fore.GREEN + f"Congratulation {name} you win")
-                menu()
-        elif choice == "2":
-            os.system("cls || clear")
-            name = input(Fore.GREEN + "Enter your name : ")
-            note = 0
+       # It is necessary to solve the problem of note (If note > 40 then the program stops)
+        while note > 40:
             os.system("cls || clear")
             print(banner)
-            print(Fore.GREEN + f"Hello {name} welcome to Ascii to Hex")
-            print(Fore.BLUE + f"Your note is {note}")
-            ascii = ''.join(random.choice('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ') for i in range(20))
-            print(Fore.GREEN + f"Convert this in hex : {ascii}")
-            hex = input(Fore.GREEN + "Enter your answer : ")
-            if hex == binascii.hexlify(ascii.encode()).decode():
-                print(Fore.GREEN + "Good job")
-                note += 0.5
-            else:
-                print(Fore.RED + "Wrong")
-                note -= 1
-            if note == 40:
-                print(Fore.GREEN + f"Congratulation {name} you win")
-                menu()
-    else:
-        print(Fore.RED + "Wrong")
-        note -= 1
-    if note == 40:
-        print(Fore.GREEN + f"Congratulation {name} you win")
-        menu()
+            print(Fore.GREEN + f"Name : {name} | Note : {note}")
+            print(Fore.GREEN + "Good job You have 40 Points!")
+            exit()
+        os.system("cls || clear")
+        print(banner)
+        print(Fore.GREEN + f"Name : {name} | Note : {note}")
 if __name__ == "__main__":
     menu()
-
-
-
-
-
