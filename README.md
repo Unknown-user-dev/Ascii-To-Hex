@@ -22,8 +22,6 @@ The Ascii-To-Hex; ⓒ Unknown User
 
 ✅ Easy To Use 
 
-✅ Can Choose your Diffuculty 
-
 ✅ Very cute anime girl ❤ (Very Important)
 
 ### Installation
