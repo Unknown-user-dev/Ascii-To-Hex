@@ -14,7 +14,7 @@ The Ascii-To-Hex; ⓒ Unknown User
 
 ### Features
 
-✅ Note /40 (Thanks NotFubukIl for the help) (NotFubkIl)[https://github.com/NotFubukIl]
+✅ Note /40 (Thanks NotFubukIl for the help) [NotFubukii](https://github.com/NotFubukIl)
 
 ✅ Stable
 
