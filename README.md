@@ -1,4 +1,4 @@
-## Ascii-To-Hex Will Help You to learn Ascii To HEx
+## Ascii-To-Hex Will Help You to learn Ascii To Hex
 ### With python made by Unknown User
 ![Github Stars](https://img.shields.io/github/stars/Unknown-user-dev/Ascii-To-Hex?style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues-raw/Unknown-user-dev/Ascii-To-Hex?style=flat-square)
