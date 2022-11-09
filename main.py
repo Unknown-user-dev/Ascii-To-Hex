@@ -59,7 +59,7 @@ def menu():
             print(Fore.GREEN + "Your answer : ", end="")
             answer = input()
             if answer == binascii.hexlify(word.encode()).decode():
-                note += 20
+                note += 0.5
             else:
                 note -= 1
        # It is necessary to solve the problem of note (If note > 40 then the program stops)
