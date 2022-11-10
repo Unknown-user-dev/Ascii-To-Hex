@@ -51,7 +51,7 @@ def menu():
             print(Fore.GREEN + f"Name : {name} | Note : {note}" + Fore.WHITE)
             print(Fore.BLUE + "Convert the following text to hex" + Fore.WHITE)
             word = ""
-            for i in range(10): word += random.choice("abcdefghijklmnopqrstuvwxyz0123456789")
+            for i in range(10): word += random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789") # my teacher who told me that I had forgotten the capital letters ;(
             print(Fore.RED + word + Fore.WHITE)
             print(Fore.GREEN + "Your answer : " + Fore.WHITE, end="")
             answer = input()
